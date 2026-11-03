@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "gifoverlay",
+	"version": "${version}",
+	"name": "GIF Overlay & Cape",
+	"description": "Put animated GIFs on your screen - drag them, resize them - and wear one as your cape. Client-side only.",
+	"authors": ["You"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.gifoverlay.GifOverlayClient"]
+	},
+	"mixins": ["gifoverlay.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
