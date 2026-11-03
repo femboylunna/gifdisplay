@@ -21,9 +21,10 @@ jobs:
           gradle-version: 9.4.0
 
       - name: Build
+        working-directory: gifoverlay
         run: gradle build --stacktrace
 
       - uses: actions/upload-artifact@v4
         with:
           name: gifoverlay-jar
-          path: build/libs/*.jar
+          path: gifoverlay/build/libs/*.jar
